@@ -3,16 +3,14 @@ import './Search.css'
 import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import  Button from '@mui/material/Button'
-import { useHistory } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 function Search() {
  const [input, setInput] = useState('')
-const history = useHistory()
-
+ const navigate = useNavigate();
 
 const search = e => {
     e.preventDefault();
