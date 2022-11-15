@@ -52,3 +52,8 @@
     border: none;
     color: #222;
 } 
+
+
+.search__buttonsHidden {
+    display: none !important;
+}

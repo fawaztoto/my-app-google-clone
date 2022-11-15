@@ -6,6 +6,7 @@ import Avatar from "@mui/icons-material/AccountBoxOutlined";
 import Search from "../components/Search";
 
 
+
 function Home() {
   return (
     <div className="home">
@@ -30,7 +31,7 @@ function Home() {
         />
 
         <div className="home__inputContainer">
-          <Search />
+          <Search hideButtons/>
 
         </div>
       </div>
