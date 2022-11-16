@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import './Search.css'
 import SearchIcon from '@mui/icons-material/Search'
 import MicIcon from '@mui/icons-material/Mic'
 import { Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { useStateValue } from '../StateProvider'
 import { actionTypes } from '../reducer'
+import './Search.css'
 
 
 
@@ -13,11 +13,11 @@ function Search({ HideButtons = false }) {
   const [state , dispatch] = useStateValue();
 
   const [input, setInput] = useState('')
-  const navigate = useNavigate()
+  const history = useNavigate()
 
-  const search= (e) => {
+  function search(event){
 
-    e.preventDefault();
+    event.preventDefault();
     console.log('u hit me ', input)
     dispatch({
 
@@ -25,7 +25,7 @@ function Search({ HideButtons = false }) {
       term : input
 
     })
-    navigate('/searchPage')
+    history('/SearchPage')
    
   }
   return (
@@ -67,3 +67,6 @@ function Search({ HideButtons = false }) {
 }
 
 export default Search
+
+
+
