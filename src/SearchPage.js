@@ -18,8 +18,13 @@ const data = Response;
   return (
     <div className='searchPage'>
       <div className='SearchPage__header'>
-      
-       <h1>{term}</h1>
+      <Link to ="/">
+     <img
+
+     className='searchPage__logo'
+
+
+      </Link>
       </div>
   
         <div className='SearchPage__results'>
