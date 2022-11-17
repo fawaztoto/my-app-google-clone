@@ -11,7 +11,7 @@ const UseGoogleSearch = (term) => {
   useEffect(() => {
     const fetchData = async () => {
       fetch(
-        `https://www.googleapis.com/customsearch/v1?key=AIzaSyCO4Ws4Zsx5rW3yJocFbiAUhVmfABiutD0&cx=d3e12c55e05d74071&q=${term || 'qatar'}`
+        `https://www.googleapis.com/customsearch/v1?key=AIzaSyCO4Ws4Zsx5rW3yJocFbiAUhVmfABiutD0&cx=d3e12c55e05d74071&q=${term}`
 
       )
       .then(response => response.json())

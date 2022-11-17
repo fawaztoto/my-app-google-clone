@@ -52,3 +52,91 @@
 .searchPage__optionsLeft {
     display: flex;
 }
+
+
+
+.searchPage__optionsRight {
+    margin-left: 80px; 
+}
+
+.searchPage__option {
+display: flex;
+align-items: center;
+margin-right: 20px;
+}
+
+
+.searchPage__option a {
+    margin-left: 5px;
+}
+
+
+.searchPage__result {
+    margin: 40px 0; 
+}
+
+.searchPage__resultCount {
+    color: #70757a;
+    font-size: 14px;
+}
+
+
+.searchPage__results {
+
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.searchPage__resultImage{
+object-fit: contain;
+height: 20px;
+width: 20px;
+margin-right: 10px;
+
+}
+
+
+.searchPage__resultTitle {
+    text-decoration: none;
+}
+
+
+.searchPage__resultTitle:hover {
+    text-decoration: underline;
+}
+
+.searchPage__ResultTitle > h2 {
+    font-weight: 500;
+}
+
+
+.searchPage__ResultSnippet{
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .SearchPage__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchPage__results{
+       margin-left: 20px;
+       font-size: 10px ;
+    }
+
+    .searchPage__optionsLeft{
+        display: none;
+    }
+
+.searchPage__logo{
+    margin-right: 0;
+}
+    
+}
